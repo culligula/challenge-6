@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+<body>
+    <div class="weather-container">
+        <h1>Current Weather</h1>
+        <div id="location">
+            <input type="text" id="city" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="country" placeholder="Country">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <!-- append searched locations to a list on screen for faster results -->
+        <div id="searched-locations">
+            <ul id="searched-locations-list"></ul>
+
+        </div>
+        <!-- container for displaying weather in searched location -->
+        <div id="weather-info">
+            
+        </div>
+    </div>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
